@@ -1,33 +1,34 @@
-# Проект: Прогнозирование временных рядов продаж в магазинах Favorita
+# Project: Forecasting Sales Time Series at Favorita Stores
 
-## Описание проекта
+## Project Description
 
-Этот проект посвящён построению модели для прогнозирования продаж тысяч товаров в различных магазинах сети Favorita. В ходе работы использовались как классические подходы к моделированию временных рядов, так и гибридные методы. Основной целью было предсказать объемы продаж с учетом факторов сезонности, трендов и других временных характеристик.
+This project is dedicated to building a model for forecasting the sales of thousands of products across various stores in the Favorita network. Both classical time series modeling approaches and hybrid methods were used. The main goal was to predict sales volumes by considering factors such as seasonality, trends, and other temporal characteristics.
 
-## Основные этапы проекта
+## Key Project Stages
 
-1. **Предобработка данных:**
-   - Очистка данных, обработка пропущенных значений.
-   - Создание дополнительных признаков (фичей) для трендов, сезонных паттернов и других временных аспектов.
-   - Разделение данных на тренировочные и тестовые выборки для валидации модели.
+1. **Data Preprocessing:**
+   - Cleaning the data and handling missing values.
+   - Creating additional features for trends, seasonal patterns, and other temporal aspects.
+   - Splitting the data into training and test sets for model validation.
 
-2. **Модели и подходы:**
-   - **Классические модели регрессии**: модели линейной регрессии с учётом тренда, сезонности и праздничных эффектов. Применялась регуляризация для борьбы с переобучением.
-   - **Гибридные модели**: комбинация линейной регрессии с регуляризацией и XGBoost для учёта сложных взаимосвязей и нелинейностей.
-   - **Prophet**: использование модели Prophet для прогнозирования временных рядов с учётом сезонных и праздничных эффектов.
+2. **Models and Approaches:**
+   - **Classical Regression Models**: Linear regression models that account for trend, seasonality, and holiday effects, with regularization applied to prevent overfitting.
+   - **Hybrid Models**: A combination of regularized linear regression and XGBoost to capture complex interactions and non-linearities.
+   - **Prophet**: Utilizing the Prophet model for forecasting time series data with seasonal and holiday effects.
 
-3. **Оценка моделей:**
-   - Оценка производительности моделей с помощью метрик MSE (Mean Squared Error), MAE (Mean Absolute Error), и RMSE (Root Mean Squared Error).
-   - Визуализация прогнозов и фактических значений для проверки адекватности модели.
+3. **Model Evaluation:**
+   - Evaluating model performance using metrics such as MSE (Mean Squared Error), MAE (Mean Absolute Error), and RMSE (Root Mean Squared Error).
+   - Visualizing forecasts against actual values to assess model adequacy.
 
-## Используемые библиотеки
+## Libraries Used
 
-Проект выполнен с использованием следующих библиотек:
+The project was implemented using the following libraries:
 
-- `pandas` — для обработки данных.
-- `numpy` — для математических операций.
-- `scikit-learn` — для реализации регрессионных моделей.
-- `XGBoost` — для гибридных моделей.
-- `Prophet` — для работы с временными рядами.
-- `matplotlib` / `seaborn` — для визуализации данных и результатов.
-- `statsmodels` 
+- `pandas` — for data processing.
+- `numpy` — for mathematical operations.
+- `scikit-learn` — for implementing regression models.
+- `XGBoost` — for hybrid models.
+- `Prophet` — for working with time series data.
+- `matplotlib` / `seaborn` — for data visualization and results presentation.
+- `statsmodels`
+
